@@ -25,6 +25,11 @@ const Add=()=>{
           alert('please enter a valid list items');
           return;
      }
+    //  for checking if the item already exists in the list
+     if (arr.includes(valuefromuser)){
+            alert('this item already exists in the list');
+            return;
+     }
     if (editindex===-1){
      arr.push(valuefromuser);
      
